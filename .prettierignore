@@ -1,0 +1,23 @@
+### Prettier_ignor template
+# Исключаем каталоги сборки и зависимости
+node_modules/
+dist/
+build/
+out/
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Конфиги и скомпилированные файлы
+package-lock.json
+yarn.lock
+
+# Верстка, которую не нужно форматировать
+*.min.css
+*.min.js
+
+# IDE файлы
+.idea/
+.vscode/
+/docs/

@@ -1,0 +1,49 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ігнорування лог-файлів
+.log
+
+# Ігнорування каталогу з залежностями
+node_modules/
+
+# Ігнорування тимчасових файлів
+*.tmp
+*.temp
+
+# Ігнорування файлів конфігурації редакторів
+.vscode/
+.idea/
+
+
+# Ігнорування побудованих файлів
+/dist
+
+# Ігнорування особистих конфігураційних файлів
+.env
+.stylelintrc.json
+
+
+!/docs/

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+/* Налаштування ручного перемикання темного режиму через клас dark */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Налаштування Темного режиму для використання класу dark */
+@property --dark-mode {
+	syntax: '<custom-ident>';
+	inherits: true;
+	initial-value: selector;
+}
+
+/* Визначення утиліт, які використовуються в JavaScript */
+@utility bg-yellow-500 {
+	background-color: theme(colors.yellow.500);
+}
+
+@utility bg-gray-700 {
+	background-color: theme(colors.gray.700);
+}
+
+@theme {
+	/*Визначаємо, що темний режим використовує клас dark*/
+	--dark-mode: selector;
+
+	/*Extending colors*/
+	--color-tomato: tomato;
+
+	/*Extending font family*/
+	--font-main: 'Roboto', sans-serif;
+
+	/*Extending font weight*/
+	--font-medium: 500;
+
+	/*Налаштування тіней і кольорів для темного режиму*/
+	--shadow-slate-400-30: rgb(148 163 184 / 0.3);
+	--shadow-slate-900-30: rgb(15 23 42 / 0.3);
+	--color-black-40: rgb(0 0 0 / 0.4);
+
+	/*Додаткові налаштування для градієнтів*/
+	--color-red-800: rgb(153 27 27);
+	--color-blue-950: rgb(23 37 84);
+}
