@@ -28,7 +28,7 @@
         </span>
       </button>
 
-      <nav>
+      <nav class="navbar">
         <ul class="navbar-list">
           <li><a href="/" class="navbar-link">Home</a></li>
           <li><a href="/" class="navbar-link">About</a></li>
@@ -36,7 +36,43 @@
           <li><a href="/" class="navbar-link">Blog</a></li>
         </ul>
       </nav>
+
+      <button class="trigger-button">
+        <svg class="trigger-button-svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
     </header>
+
+    <nav class="breadcrumb">
+      <a class="breadcrumb-link" href=" ">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M22 22L2 22" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M4 22V9.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M20 9.5V13.5M20 22V17.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z" stroke="#1C274C" stroke-width="1.5"></path>
+            </g>
+          </svg>
+      </a>
+      <span class="breadcrumb-separator">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.25 4.5l7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
+      <a class="breadcrumb-link" href=" ">Articles</a>
+      <span class="breadcrumb-separator">
+         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.25 4.5l7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
+      <a class="breadcrumb-link" href=" ">All</a>
+    </nav>
 
     <main class="main">
 
@@ -67,6 +103,71 @@
         </article>
 
       </section>
+
+      <div class="main-container"> <!-- main-container -->
+
+        <section class="articles-container"> <!-- articles-container -->
+          <h2 class="articles-header">Lorem ipsum dolor sit.</h2>
+          <div>
+
+            <article class="article">
+              <a class="article-link group" href=" ">
+                <div class="article-caption">
+                  <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+                  <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis ducimus enim error, laboriosam officia?</p>
+                </div>
+                <img class="article-image" src="public/image3.jpg" alt="image">
+              </a>
+            </article>
+
+            <article class="article">
+              <a class="article-link group" href=" ">
+                <div class="article-caption">
+                  <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+                  <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis ducimus enim error, laboriosam officia?</p>
+                </div>
+                <img class="article-image" src="public/image4.jpg" alt="image">
+              </a>
+            </article>
+
+            <article class="article">
+              <a class="article-link group" href=" ">
+                <div class="article-caption">
+                  <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+                  <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis ducimus enim error, laboriosam officia?</p>
+                </div>
+                <img class="article-image" src="public/image5.jpg" alt="image">
+              </a>
+            </article>
+
+            <article class="article">
+              <a class="article-link group" href=" ">
+                <div class="article-caption">
+                  <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+                  <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis ducimus enim error, laboriosam officia?</p>
+                </div>
+                <img class="article-image" src="public/image6.jpg" alt="image">
+              </a>
+            </article>
+
+          </div>
+        </section> <!-- articles-container -->
+
+        <div class="form-container"> <!-- form-container -->
+          <h4 class="form-header">Subscribe</h4>
+          <form action="url">
+            <div class="form-group">
+              <label class="form-lable" for="email">Subscribe to our newsletter</label>
+              <input class="form-control" type="email" id="email" placeholder="Enter your email">
+
+            </div>
+            <div class="form-group">
+              <button class="form-button" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div> <!-- form-container -->
+
+      </div> <!-- main-container -->
 
     </main>
 
@@ -100,6 +201,7 @@
               </svg>
 
             </button>
+
             <!-- Dropdown menu -->
             <div id="lastDaysdropdown" class="dropndown__container">
               <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">

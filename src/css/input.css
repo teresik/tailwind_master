@@ -15,6 +15,9 @@
 .switch-button {
 	@apply w-20 h-10 bg-gray-300 rounded-full flex items-center transition duration-300 focus:outline-none shadow;
 }
+.navbar {
+	@apply hidden md:block;
+}
 .navbar-list {
 	@apply flex items-center gap-6 text-gray-500;
 }
@@ -47,6 +50,76 @@
 }
 .hero-image {
 	@apply absolute left-0 top-0 h-full w-full object-cover transition duration-300 group-hover:scale-110;
+}
+.trigger-button {
+	@apply md:hidden;
+}
+.trigger-button-svg {
+	@apply w-8 h-8 text-slate-700 dark:text-slate-300;
+}
+.breadcrumb {
+	@apply flex items-center mb-8;
+}
+.breadcrumb-link {
+	@apply text-gray-500 transition duration-300 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100;
+}
+.breadcrumb-separator {
+	@apply text-gray-400 dark:text-gray-600;
+}
+.main-container {
+	@apply lg:flex lg:gap-10 border-t border-gray-200 dark:border-gray-700 pt-10;
+}
+.articles-container {
+	@apply lg:flex-grow lg:basis-0;
+}
+.articles-header {
+	@apply mb-8 text-3xl font-bold text-blue-800/80 uppercase
+	dark:text-gray-300 group-hover:text-gray-900 -mt-2 mb-4;
+}
+.article {
+	@apply mb-8;
+}
+.article-link {
+	@apply flex gap-4 shadow-lg shadow-slate-400/30 dark:shadow-slate-900/30 transition
+	duration-300 rounded-lg hover:shadow-2xl;
+}
+.article-caption {
+	@apply p-4;
+}
+.article-title {
+	@apply text-2xl font-medium text-gray-500 dark:text-gray-100 transition duration-300
+	group-hover:text-gray-900 -mt-2 mb-4;
+}
+.article-description {
+	@apply text-gray-400 transition duration-300 group-hover:text-gray-700;
+}
+.article-image {
+	@apply w-44 h-44 object-cover rounded-l-lg transition duration-300 order-first;
+}
+.form-container {
+	@apply lg:w-1/3 rounded-lg shadow-lg bg-slate-200/40 shadow-slate-400/30 px-6 py-8 mt-16 mb-112
+	lg:self-start dark:bg-slate-700/20 dark:shadow-slate-900/30;
+}
+.form-header {
+	@apply mb-8 text-2xl font-bold uppercase text-blue-800/80 dark:text-white/50;
+}
+.form-group {
+	@apply mb-6;
+}
+.form-lable {
+	@apply block mb-4 -mt-6 text-gray-800 dark:text-gray-400;
+}
+.form-control {
+	@apply w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:shadow-lg
+	focus:shadow-slate-400/50 focus:border-blue-500 dark:focus:shadow-slate-900 dark:bg-slate-700
+	dark:border-slate-600 dark:text-gray-200;
+}
+.form-control::placeholder {
+	@apply text-gray-400 dark:text-gray-500;
+}
+.form-button {
+	@apply block w-full px-4 py-4 font-medium uppercase bg-blue-500 text-white text-center
+	transition rounded shadow hover:shadow-lg hover:shadow-blue-700 focus:outline-none dark:text-gray-900;
 }
 .footer {
 	@apply max-w-sm w-full bg-gray-100 rounded-lg shadow-sm dark:bg-gray-600 p-4 md:p-6;
