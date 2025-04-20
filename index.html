@@ -5,8 +5,8 @@
     <link rel="icon" href="/tailwind_master/assets/favicon-C8IuzUlg.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite App</title>
-    <script type="module" crossorigin src="/tailwind_master/assets/main-C2GK6X3_.js"></script>
-    <link rel="stylesheet" crossorigin href="/tailwind_master/assets/main-Bj4ZKHY8.css">
+    <script type="module" crossorigin src="/tailwind_master/assets/main-DYzmQqmd.js"></script>
+    <link rel="stylesheet" crossorigin href="/tailwind_master/assets/main-BS0edhO4.css">
   </head>
 
   <body class="body">
@@ -29,7 +29,7 @@
         </span>
       </button>
 
-      <nav>
+      <nav class="navbar">
         <ul class="navbar-list">
           <li><a href="/" class="navbar-link">Home</a></li>
           <li><a href="/" class="navbar-link">About</a></li>
@@ -37,7 +37,43 @@
           <li><a href="/" class="navbar-link">Blog</a></li>
         </ul>
       </nav>
+
+      <button class="trigger-button">
+        <svg class="trigger-button-svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
     </header>
+
+    <nav class="breadcrumb">
+      <a class="breadcrumb-link" href=" ">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M22 22L2 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M2 11L6.06296 7.74968M22 11L13.8741 4.49931C12.7784 3.62279 11.2216 3.62279 10.1259 4.49931L9.34398 5.12486" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M15.5 5.5V3.5C15.5 3.22386 15.7239 3 16 3H18.5C18.7761 3 19 3.22386 19 3.5V8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M4 22V9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M20 9.5V13.5M20 22V17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M15 22V17C15 15.5858 15 14.8787 14.5607 14.4393C14.1213 14 13.4142 14 12 14C10.5858 14 9.87868 14 9.43934 14.4393M9 22V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M14 9.5C14 10.6046 13.1046 11.5 12 11.5C10.8954 11.5 10 10.6046 10 9.5C10 8.39543 10.8954 7.5 12 7.5C13.1046 7.5 14 8.39543 14 9.5Z" stroke="currentColor" stroke-width="1.5"></path>
+            </g>
+          </svg>
+      </a>
+      <span class="breadcrumb-separator">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.25 4.5l7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
+      <a class="breadcrumb-link" href=" ">Articles</a>
+      <span class="breadcrumb-separator">
+         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.25 4.5l7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
+      <a class="breadcrumb-link" href=" ">All</a>
+    </nav>
 
     <main class="main">
 
@@ -69,69 +105,188 @@
 
       </section>
 
-    </main>
+      <div class="main-container"> <!-- main-container -->
 
-    <footer class="footer">
-
-        <div class="footer_container">
+        <section class="articles-container"> <!-- articles-container -->
+          <h2 class="articles-header">Lorem ipsum dolor sit.</h2>
           <div>
-            <h5 class="leading-none text-3xl font-bold text-gray-900 dark:text-white pb-2">32.4k</h5>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Users this week</p>
-          </div>
-          <div class="footer-container__item ">
-            12%
-            <svg class="w-3 h-3 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4"/>
-            </svg>
-          </div>
-        </div>
-        <div id="area-chart"></div>
-        <div class="footer__dropndown">
-          <div class="footer-dropndown__item">
-            <!-- Button -->
-            <button
-              id="dropdownDefaultButton"
-              data-dropdown-toggle="lastDaysdropdown"
-              data-dropdown-placement="bottom"
-              class=" dropndown__btn"
-              type="button">
-              Last 7 days
-              <svg class="w-2.5 m-2.5 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-              </svg>
 
-            </button>
-            <!-- Dropdown menu -->
-            <div id="lastDaysdropdown" class="dropndown__container">
-              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-                <li>
-                  <a href="#" class="dropndown__item">Yesterday</a>
-                </li>
-                <li>
-                  <a href="#" class="dropndown__item">Today</a>
-                </li>
-                <li>
-                  <a href="#" class="dropndown__item">Last 7 days</a>
-                </li>
-                <li>
-                  <a href="#" class="dropndown__item">Last 30 days</a>
-                </li>
-                <li>
-                  <a href="#" class="dropndown__item">Last 90 days</a>
-                </li>
+            <article class="article">
+              <a class="article-link group" href=" ">
+                <div class="article-caption">
+                  <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+                  <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis ducimus enim error, laboriosam officia?</p>
+                </div>
+                <img class="article-image" src="/tailwind_master/assets/image3-DG7Gsfrl.jpg" alt="image">
+              </a>
+            </article>
+
+            <article class="article">
+              <a class="article-link group" href=" ">
+                <div class="article-caption">
+                  <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+                  <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis ducimus enim error, laboriosam officia?</p>
+                </div>
+                <img class="article-image" src="/tailwind_master/assets/image4-DkU6za_0.jpg" alt="image">
+              </a>
+            </article>
+
+            <article class="article">
+              <a class="article-link group" href=" ">
+                <div class="article-caption">
+                  <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+                  <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis ducimus enim error, laboriosam officia?</p>
+                </div>
+                <img class="article-image" src="/tailwind_master/assets/image5-DyhoyFvA.jpg" alt="image">
+              </a>
+            </article>
+
+            <article class="article">
+              <a class="article-link group" href=" ">
+                <div class="article-caption">
+                  <h2 class="article-title">Lorem ipsum dolor sit amet.</h2>
+                  <p class="article-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis ducimus enim error, laboriosam officia?</p>
+                </div>
+                <img class="article-image" src="/tailwind_master/assets/image6-Ddce8cAc.jpg" alt="image">
+              </a>
+            </article>
+          </div>
+
+          <div class="pagination-container">
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-link rounded-l-md" href=" ">First</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href=" ">Prev</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href=" ">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href=" ">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href=" ">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href=" ">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href=" ">5</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href=" ">Next</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link rounded-r-md" href=" ">Last</a>
+              </li>
+            </ul>
+          </div>
+
+        </section> <!-- articles-container -->
+
+        <div class="form-container"> <!-- form-container -->
+          <h4 class="form-header">Subscribe</h4>
+          <form action="url">
+            <div class="form-group">
+              <label class="form-lable" for="email">Subscribe to our newsletter</label>
+              <input class="form-control" type="email" id="email" placeholder="Enter your email">
+
+            </div>
+            <div class="form-group">
+              <button class="form-button" type="submit">Subscribe</button>
+            </div>
+          </form>
+
+          <div class="stat">
+            <div class="stat_container">
+              <div>
+                <h5 class="leading-none text-3xl font-bold text-gray-900 dark:text-white/50 pb-2">32.4k</h5>
+                <p class="text-base font-normal text-gray-500 dark:text-white/50">Users this week</p>
+              </div>
+              <div class="stat-container__item ">
+                12%
+                <svg class="w-3 h-3 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4"/>
+                </svg>
+              </div>
+            </div>
+            <div id="area-chart"></div>
+            <div class="stat__dropndown">
+              <div class="stat-dropndown__item">
+                <!-- Button -->
+                <button
+                  id="dropdownDefaultButton"
+                  data-dropdown-toggle="lastDaysdropdown"
+                  data-dropdown-placement="bottom"
+                  class=" dropndown__btn"
+                  type="button">
+                  Last 7 days
+                  <svg class="w-2.5 m-2.5 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                  </svg>
+
+                </button>
+
+                <!-- Dropdown menu -->
+                <div id="lastDaysdropdown" class="dropndown__container">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                      <a href="#" class="dropndown__item">Yesterday</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropndown__item">Today</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropndown__item">Last 7 days</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropndown__item">Last 30 days</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropndown__item">Last 90 days</a>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="#"
+                  class="uppercase text-sm font-semibold inline-flex items-center rounded-lg text-blue-500 hover:text-blue-700 focus:ring-gray-200 border-gray-200 dark:text-blue-500 dark:hover:text-blue-400  hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 px-3 py-2">
+                  Users Report
+                  <svg class="w-2.5 h-2.5 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- form-container -->
+
+      </div> <!-- main-container -->
+
+      <footer class="footer">
+          <div class="footer-container">
+            <div>
+              <h5 class="footer-header">About</h5>
+              <ul>
+                <li><a class="footer-link" href=" ">About the project</a></li>
+                <li><a class="footer-link" href=" ">Our team</a></li>
+                <li><a class="footer-link" href=" ">Contacts</a></li>
               </ul>
             </div>
-            <a
-              href="#"
-              class="uppercase text-sm font-semibold inline-flex items-center rounded-lg text-blue-600 hover:text-blue-700 focus:ring-gray-200 border-gray-200 dark:text-blue-500 dark:hover:text-blue-400  hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 px-3 py-2">
-              Users Report
-              <svg class="w-2.5 h-2.5 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-              </svg>
-            </a>
+            <div>
+              <h5 class="footer-header">We are on social networks</h5>
+              <ul>
+                <li><a class="footer-link" href=" ">Facebook</a></li>
+                <li><a class="footer-link" href=" ">Instagram</a></li>
+                <li><a class="footer-link" href=" ">Twitter</a></li>
+                <li><a class="footer-link" href=" ">LinkedIn</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-    </footer>
+      </footer>
+
+    </main>
     
   </div>
           <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.46.0/dist/apexcharts.min.js"></script>
